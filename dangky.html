@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký khóa học</title>
+    <link rel="shortcut icon" href="./image/anh_bia.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <nav style="text-align: center; font-weight: bold">
+        <a href="./index.html">Giới thiệu khóa học</a> <a href="./dangky.html" id="selected">Đăng ký khóa học</a>  
+    </nav>
+    <header>
+        <h1 style="text-align: center;">Đăng ký khóa học Graphic Design</h1>
+    </header>
+    <main>
+        <div class="form-box">
+            <section>
+                <h2>Thông tin cá nhân</h2>
+                <form>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" required>
+                    <label for="date">Ngày sinh:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ngày sinh" required>
+                </form>
+            </section>
+            <section>
+                <h2>Thông tin khóa học</h2>
+                <form>
+                    <label for="date">Ngày khai giảng:</label>
+                    <select id="date" name="date" required>
+                        <option value="">Chọn ngày khai giảng</option>
+                        <option value="lựa chọn 1"> 18h30 thứ 2 (10/06/2024)</option>
+                        <option value="lựa chọn 2"> 18h30 thứ 3 (11/06/2024)</option>
+                    </select>
+                    <label for="date">Ngày học:</label>
+                    <select id="date" name="date" required>
+                        <option value="">Chọn ngày học</option>
+                        <option value="lựa chọn 1"> 18h30 thứ 2,4,6</option>
+                        <option value="lựa chọn 2"> 18h30 thứ 3,5,7</option>
+                    </select>
+                    <label for="place">Địa điểm học:</label>
+                    <select id="place" name="place" required>
+                        <option value="">Chọn địa điểm học</option>
+                        <option value="lựa chọn 1">Chùa Bộc, Đống Đa, Hà Nội</option>
+                        <option value="lựa chọn 1">Nghĩa Đô, Cầu Giấy, Hà Nội</option>
+                    </select>
+                </form>
+            </section>
+            <section>
+                <form >
+                    <input type="submit" value="Đăng ký" style="text-align: center; font-weight: bold">
+                </form>
+            </section>
+        </div>
+    </main>    
+</body>
+</html>
