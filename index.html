@@ -3,77 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="graphic design, thiết kế đồ họa">
-    <meta name="description" content="Khóa học Graphic Design từ cơ bản đến nâng cao, đào tạo toàn diện kỹ năng và tư duy thiết kế ân phẩm 2D. Khóa học còn giúp học viên hoàn thiện chuyên môn nghề nghiệp, nắm vững quy trình và cách triển khai, lên kế hoạch cho dự án thiết kế ấn phẩm truyền thông.">
+    <meta name="keyword" content="Nguyễn Huyền My">
+    <meta name="description" content="giới thiệu bản thân của Nguyễn Huyền My">
     <meta name="Author" content="Huyền My">
     <meta name="copyright" content="Huyền My">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <title>Đăng ký khóa học Graphic Design</title>
-    <link rel="shortcut icon" href="./image/anh_bia.png" type="image/x-icon">
+    <title>Giới thiệu bản thân</title>
+    <link rel="shortcut icon" href="./image/anh_My.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/main.js"></script>
 </head>
+<header>
+    <p style="text-align: center;"><img src="./image/anh_My.png" style="width: 200px; height: auto;"></p>
+    <h1>Nguyễn Huyền My</h1>
+</header>
 <body>
-    <nav style="text-align: center; font-weight: bold">
-        <a href="./index.html" id="selected">Giới thiệu khóa học</a> <a href="./dangky.html">Đăng ký khóa học</a> 
-    </nav>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #1abc9c;
+        }
+        .grid-item {
+            background-color: white;
+            color:black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <div class="grid-container">
+        <div class="grid-item">
+            Ngày sinh: 06/10/2003
+        </div>
+        <div class="grid-item">
+            Nơi sinh: Hà Nội
+        </div>
+        <div class="grid-item">
+            Giới tính: Nữ
+        </div>
+        <div class="grid-item">
+            SĐT: 0967527829
+        </div>
+        <div class="grid-item">
+            Email: <a href="mailto:(webmail@gmail.com)" class="special-link">huyenmymeou@gmail.com</a>
+        </div>
+        <div class="grid-item">
+            Facebook: <a href="https://www.facebook.com/nguyen.huyenmy.319" class="special-link">Huyền My</a>
+        </div>      
+    </div>
 
-    <p style="text-align: center;"><a href="dangky.html"><img src="./image/anh_bia.png" style="width: 100%; height: auto;"></a></p>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .item {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <div class="container">
         <div class="item">
-            <img src="./image/anh_8.png" alt="Image 8">
+            <a href="#hoc-van"><img src="./image/hoc_van.png" alt="Học vấn"></a>
         </div>
         <div class="item">
-            <img src="./image/anh_9.png" alt="Image 9">
+            <a href="#chung-chi"><img src="./image/chung_chi.png" alt="Chứng chỉ"></a>
         </div>
         <div class="item">
-            <img src="./image/anh_10.png" alt="Image 10">
+            <a href="#hoat-dong"><img src="./image/hoat_dong.png" alt="Hoạt động"></a>
         </div>
         <div class="item">
-            <img src="./image/anh_11.png" alt="Image 11">
+            <a href="#khen-thuong"><img src="./image/khen_thuong.png" alt="Khen thưởng"></a>
+        </div>
+        <div class="item">
+            <a href="#ky-nang"><img src="./image/ky_nang.png" alt="Kỹ năng"></a>
+        </div>
+        <div class="item">
+            <a href="#so-thich"><img src="./image/so_thich.png" alt="Sở thích"></a>
         </div>
     </div>
-    <header>
-        <h3 style="text-align: center;">Sau khóa học bạn nhận được gì</h3>
-    </header>
-    <div class="container">
-        <div class="item">
-            <img src="./image/anh_1.jpg" alt="Image 1">
-            <p>Thành thạo sử dụng bộ công cụ thiết kế, ứng dụng trong sáng tạo hình ảnh như <b>Adobe Photoshop, Adobe Illustrator,...</b></p>
+
+    <article id="hoc-van">
+        <h2>Học vấn</h2>
+        <div class="header-row">
+            <h3><b>KHOA CÔNG NGHỆ THÔNG TIN VÀ KINH TẾ SỐ - HỌC VIỆN NGÂN HÀNG</b></h3>
+            <time datetime="2021/10 - nay" class="datetime">2021/10 - nay</time>
         </div>
-        <div class="item">
-            <img src="./image/anh_2.jpg" alt="Image 2">
-            <p>Xây dựng <b>tư duy thiết kế</b> vững chắc. Tự do biến ý tưởng hành hiện thực</p>
+        <p>Sinh viên năm 3 chuyên ngành Hệ thống thông tin quản lý định hướng Nhật Bản</p>
+    </article>
+    
+
+    <article id="chung-chi">
+        <h2>Chứng chỉ</h2>
+        <div class="header-row">
+            <h3><b>CHỨNG CHỈ TIẾNG NHẬT JLPT (Japanese Language Proficiency Test)</b></h3>
+            <time datetime="2022/07" class="datetime">2022/07</time>
         </div>
-        <div class="item">
-            <img src="./image/anh_3.jpg" alt="Image 3">
-            <p>Thành thạo toàn diện <b>quy trình thiết kế nhận diện thương hiệu - truyền thông</b></p>
+        <br>
+        <div class="header-row">
+            <h3><b>CHỨNG CHỈ TIN HỌC VĂN PHÒNG MOS (Microsoft Office Specialist)</b></h3>
+            <time datetime="2021/09" class="datetime">2021/09</time>
         </div>
-        <div class="item">
-            <img src="./image/anh_4.jpg" alt="Image 4">
-            <p>Sở hữu <b>dự án thực tế</b> ngay trong khóa học với các sản phẩm <b>portfolio, bộ nhận diện truyền thông, hồ sơ doanh nghiệp, thương hiệu cá nhân,...</b></p>
+    </article>
+
+    <article id="hoat-dong">
+        <h2>Hoạt động</h2>
+        <div class="header-row">
+            <h3><b>CÂU LẠC BỘ TIN HỌC NGÂN HÀNG BIT</b></h3>
+            <time datetime="2021/11 - 2023/05" class="datetime">2021/11 - 2023/05</time>
         </div>
-    </div>
-    <header>
-        <h3 style="text-align: center;">Một khóa học đặc biệt dành cho</h3>
-    </header>
-    <div class="container">
-        <div class="item">
-            <img src="./image/anh_5.png" alt="Image 5">
-            <p>Các chuyên ngành <b>kinh tế, marketing, truyền thông, báo chí,...</b> muốn sở hữu thiết kế để bổ trợ cho công việc sau này hoặc chuyên ngành khác muốn chuyển ngành.</p>
+        <p>Thành viên Ban chuyên môn</p>
+        <br>
+        <div class="header-row">
+            <h3><b>ĐỘI SINH VIÊN TÌNH NGUYỆN HỌC VIỆN NGÂN HÀNG BAVT</b></h3>
+            <time datetime="2021/11 - 2023/12" class="datetime">2021/11 - 2023/12</time>
         </div>
-        <div class="item">
-            <img src="./image/anh_6.png" alt="Image 6">
-            <p>Muốn <b>nâng cấp bản thân</b>, hoàn thiện full bộ kỹ năng của một Creator, sẵn sàng bứt phá trong ngành Truyền thông.</p>
+        <p>Chủ chốt nhóm</p>
+        <br>
+        <div class="header-row">
+            <h3><b>BAN CHẤP HÀNH LIÊN CHI ĐOÀN - LIÊN CHI HỘI VIỆN ĐÀO TẠO QUỐC TẾ</b></h3>
+            <time datetime="2022/04 - nay" class="datetime">2022/04 - nay</time>
         </div>
-        <div class="item">
-            <img src="./image/anh_7.png" alt="Image 7">
-            <p>Muốn <b>học thêm kỹ năng mới, mở rộng cơ hội việc làm,</b> chuyển ngành, có thêm nguồn thu nhập, trở thành nhân sự toàn năng, đứng vững trước biến động thị trường.</p>
+        <p>Ủy viên Ban Đối ngoại của Ban Chấp hành & Liên chi Hội Phó</p>
+    </article>
+    
+    <article id="khen-thuong">
+        <h2>Khen thưởng</h2>
+        <div class="header-row">
+            <h3><b>HỌC BỔNG KKHT LOẠI GIỎI HKI NĂM HỌC 2021 - 2022</b></h3>
+            <time datetime="2021 - 2022" class="datetime">2021 - 2022</time>
         </div>
-    </div>
-    <header>
-        <h3 
-        style="text-align: center;">Lộ trình học từ cơ bản đến nâng cao. Chi tiết lộ trình khóa học <a href="./dangky.html" class="special-link" style="margin-left: 10px;">TẠI ĐÂY</a>
-        </h3>
-    </header>
+        <br>
+        <div class="header-row">
+            <h3><b>HỌC BỔNG KKHT LOẠI GIỎI HKI NĂM HỌC 2022 - 2023</b></h3>
+            <time datetime="2022 - 2023" class="datetime">2022 - 2023</time>
+        </div>
+        <br>
+        <div class="header-row">
+            <h3><b>HỌC BỔNG KKHT LOẠI GIỎI HKI NĂM HỌC 2023 - 2024</b></h3>
+            <time datetime="2023 - 2024" class="datetime">2023 - 2024</time>
+        </div>
+        <br>
+        <div class="header-row">
+            <h3><b>ĐẠT DANH HIỆU SINH VIÊN 5 TỐT CẤP HỌC VIỆN</b></h3>
+            <time datetime="2023" class="datetime">2023</time>
+        </div>
+        <br>
+        <div class="header-row">
+            <h3><b>ĐÃ CÓ THÀNH TÍCH XUẤT SẮC TRONG CÔNG TÁC ĐOÀN VÀ PHONG TRÀO THANH NIÊN</b></h3>
+            <time datetime="2023" class="datetime">2023</time>
+        </div>
+    </article>
+
+    <article id="ky-nang">
+        <h2>Kỹ năng</h2>
+        <p><b>Quản lý thời gian:</b> Khả năng tổ chức, sắp xếp công việc tốt theo thời gian biểu</p>
+        <p><b>Quản lý đội nhóm:</b> Biết cách phân chia công việc và điều phối nhân sự để hoàn thành các nhiệm vụ được giao</p>
+        <p><b>Kỹ năng giao tiếp:</b> Giao tiếp thân thiện, nhẹ nhàng, biết lắng nghe</p>
+        <p><b>Chịu được áp lực công việc:</b> Sẵn sàng hoàn thành công việc trong đúng khoảng thời gian cụ thể được giao</p>
+        <p><b>Thảo luận nhóm:</b> Thu thập, ghi nhớ thông tin, thuyết phục và giải quyết xung đột</p>
+    </article>
+
+    <article id="so-thich">
+        <h2>Sở thích</h2>
+        <p>Tham gia các hoạt động tình nguyện</p>
+        <p>Chụp ảnh và viết lách về những chuyến du lịch</p>
+    </article>
+    <button id="scroll-to-top" title="Go to top">↑</button>
 </body>
+<footer>
+    <p>&copy; 2024 NguyenHuyenMy</p>
+</footer>
 <html>

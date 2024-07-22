@@ -1,172 +1,99 @@
 body
 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    color:black;
+    font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', Times, serif;
     margin: 0 auto;
-    text-align: center;
     width: 1024px;
 }
-
-a:link 
-{
-    text-decoration: none;
-    color:black;
-}
-
-a:visited 
-{
-    text-decoration: none;
-    color:black;
-}
-
-a:hover 
-{
-    color:#e34749;
-}
-a:active
-{
-    color:#e34749;
-}
-nav
-{
-    display: flex;
-    background-color:aliceblue;
+header {
     flex: 100%;
-    padding: 0px;
-}
-nav a
-{
-    color:black;
-    padding: 14px 20px;
+    background: #1abc9c;
+    color: white;
+    padding: 30px;
     text-align: center;
-    text-decoration: none;
 }
-nav a:hover
-{
-    background-color: #e34749;
-    color: black;
+.special-link {
+    color: black; 
+    text-decoration: none; 
 }
-nav #selected
-{
-    background-color: #e34749;
-    color: black;
+.special-link:hover {
+    color: #1abc9c; 
+    text-decoration: none; 
 }
 h1{
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     display: flex;
-    background-color:#e34749;
     flex: 100%;
-    padding: 20px;
     color: white;
     padding: 14px 20px;
-    text-decoration: none;
     justify-content: center;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #1abc9c;
 }
 h3{
-    font-size: 28px;
-    margin-bottom: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    display: flex;
-    background-color:#e34749;
-    flex: 100%;
-    padding: 20px;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    justify-content: center;
-}
-.form-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-form {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 30px;
+    margin-bottom: 5px;
     color: black;
 }
-
-label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-input[type="date"],
-input[type="time"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border: 1px solid black;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: black;
-}
-
-input[type="submit"]:hover {
-    background-color: #e34749;
-    color: white;
-}
-
-.container {
+article {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 1px solid rgba(26, 188, 156, .5)
+}
+article h3 {
+    font-weight: 100;
+    font-size: 1em
+}
+.datetime {
+    align-self: flex-end;
+    background-color: #1abc9c !important;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 18px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.item {
-    flex: 1;
-    margin: 10px;
+.header-row h3 {
+    margin: 0;
+}
+
+.header-row .datetime {
+    margin-left: 20px;
+}
+footer {
+    flex: 100%;
+    background: #1abc9c;
+    color: white;
+    padding: 5px;
     text-align: center;
 }
 
-.item img {
-    max-width: 100%;
-    height: auto;
+/*trượt thanh*/
+#scroll-to-top {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed; /* Định vị cố định ở góc dưới bên phải */
+    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
+    right: 20px; /* Khoảng cách từ bên phải của màn hình */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    border: none; /* Bỏ đường viền */
+    outline: none; /* Bỏ viền khi nhấn */
+    background-color: #1abc9c; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
 }
 
-.item p {
-    margin-top: 10px;
-}
-
-.special-link {
-    color: red; 
-    text-decoration: none; 
-}
-.special-link:hover {
-    color: white; 
-    text-decoration: underline; 
+#scroll-to-top:hover {
+    background-color: #1abc9c; /* Màu nền khi di chuột qua nút */
 }
